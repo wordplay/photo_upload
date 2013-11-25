@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TemplateBootstrapSite::Application.load_tasks
+PhotoUpload::Application.load_tasks
