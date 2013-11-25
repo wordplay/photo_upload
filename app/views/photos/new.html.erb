@@ -1,0 +1,13 @@
+<% provide(:title, "New Photo") %>
+<h1>New Photo</h1>
+<%= form_for @photo, :html => {:multipart => true} do |f| %>
+  <p>
+    <label>Photo</label>
+    <%= f.file_field :photo_file %>
+    <%= f.hidden_field :photo_file_cache %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

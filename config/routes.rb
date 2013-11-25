@@ -6,6 +6,8 @@ PhotoUpload::Application.routes.draw do
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
 
+  resources :photos, only: [:new, :create, :show]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
